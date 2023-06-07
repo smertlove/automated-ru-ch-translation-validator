@@ -1,0 +1,31 @@
+@media screen and (max-width: 1087px) {
+    .navbar-menu {
+        background-color: #363636;
+        color: white;
+    }
+}
+
+
+/* OVERRIDE SOME BULMA CLASSES SO IT WORKS PROPERLY */
+
+.navbar-burger:hover {
+    background-color: #292929;
+}
+
+.navbar-item-override {
+    background-color: #363636 !important;
+    color: #fff !important;
+}
+
+.navbar-item-override:hover {
+    background-color: #292929 !important;
+}
+
+.missing-char {
+    color: green;
+}
+
+.extra-char {
+    background-color: red;
+    text-decoration: line-through;
+}

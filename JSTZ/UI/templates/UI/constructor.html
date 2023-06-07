@@ -1,0 +1,91 @@
+{% extends 'UI/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<div class="is-primary mx-6 pt-6">
+
+
+
+    <form id="getregex" enctype="multipart/form-data" method="post" action="get_regex" class="">
+        {% csrf_token %}
+
+        <div class="field">
+            <label class="label">Переменные</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="$bmstu = 莫斯科国立鲍曼技术大学;" name="vars"></textarea>
+            </div>
+          </div>
+
+
+          <div class="field">
+            <label class="label">Регулярное выражение</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="我是(老师|教授|<s你>)的同志，在$bmstu工作。$bmstu是很好的大学。" name="regexp"></textarea>
+            </div>
+          </div>
+
+
+
+
+            <div class="control">
+              <button class="button is-dark">Создать регулярное выражение</button>
+            </div>
+
+
+      </form>
+
+
+
+
+      <div class="column box mt-4" >
+
+        <label class="label">Ваше регулярное выражение: </label>
+        {% for re in data.enhanced_regex %}
+
+            <p><code>{{ re }}</code></p>
+        {% endfor %}
+        <label class="label">Его обычный вариант: </label>
+        {% for re in data.ordinary_regex %}
+
+            <p><code>{{ re }}</code></p>
+        {% endfor %}
+        <label class="label">Варианты преобразований: </label>
+        {% for variant in data.variants %}
+
+            <p>{{ variant }}</p>
+        {% endfor %}
+
+
+    </div>
+
+
+
+      <p class="mb-4">Наши регулярные выражения поддерживают весь доступный синтаксис кроме "." и "*" (см. документацию регулярных выражений).</p>
+      <p class="mb-4">
+          Кроме того, мы предоставляем дополнительный синтаксис: <br>
+          <code>&#60;&#60;vars ... &#62;&#62;</code> позволяет добавлять в регулярные выражения переменные (синтаксис языка программирования PHP).<br>
+          Пример: <code>&#60;&#60;vars $bmstu = 莫斯科国立鲍曼技术大学; &#62;&#62;</code> <br>
+          <code>&#60;s...&#62;</code> дает команду рассматривать не только данный иероглиф, но и его синонимы.<br>
+          Пример: <code>&#60;s你&#62;</code> <br>
+          <code>&#60;p...&#62;</code> дает каманду рассматривать не только данные иероглифы, но и их пининь.<br>
+          Пример: <code>&#60;p王先生&#62;</code> <br>
+      </p>
+      <p class="mb-4">
+        Кроме того, обладая навыками программирования Вы можете расширять доступный дополнительный синтаксис самостоятельно. <br>
+        Для этого в файле <code>...\教授的同志\JSTZ\UI\src\UserRules.py</code> напишите свою функцию (одного аргумента) - обработчик иероглифа(ов). <br>
+        После чего в том же файле добавьте в переменную <code>RULES</code> пару <code>"[имя правила]" : [имя функции]</code>. <br>
+        Вы сможете использовать конструкции вида <code>&#60;[имя правила]...&#62;</code> в Ваших регулярных выражениях.
+      </p>
+
+
+</div>
+
+
+<script>
+
+</script>
+
+{% endblock %}

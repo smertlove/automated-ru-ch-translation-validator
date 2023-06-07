@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSTZ</title>
+    <link rel="stylesheet" href="{% static 'UI/css/bulma/css/bulma.css' %}">
+    <link rel="stylesheet" href="{% static 'UI/css/style.css' %}">
+
+    <!-- <link rel="stylesheet" href="../../static/"> -->
+</head>
+<body >
+    <nav class="navbar is-dark">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+               教授的同志
+          </a>
+          <div class="navbar-burger" data-target="nav-links" id="nav-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      
+        <div id="nav-links" class="navbar-menu is-dark">
+          <div class="navbar-end is-dark">
+            <a class="navbar-item  is-dark navbar-item-override" href="/">
+              Главная
+            </a>
+            <a class="navbar-item  is-dark navbar-item-override" href="/constructor">
+              Конструктор РВ
+            </a>
+            <a class="navbar-item  is-dark navbar-item-override" href="/admin">
+              Панель администратора
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+      {% block content %}
+      {% endblock %}
+      </div>
+      <script src="{% static 'UI/js/navbarMenu.js' %}"></script>
+</body>
+</html>

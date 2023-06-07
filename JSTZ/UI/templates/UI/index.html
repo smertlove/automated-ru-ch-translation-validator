@@ -1,0 +1,64 @@
+{% extends 'UI/base.html' %}
+{% load static %}
+{% block content %}
+<div class="columns container pl-6 pt-5">
+<div class="column is-4" style="max-width: 280px;">
+  <form id="uploadbanner" enctype="multipart/form-data" method="post" action="get_file" class="">
+    {% csrf_token %}
+
+    <div class="field is-grouped" style="position: relative;">
+
+
+      <div class="control">
+        <span class="select is-dark" style="max-width: 210px;">
+          <select name="lesson">
+            <option>Урок</option>
+            {% for lesson in data.lessons %}
+            <option>{{ lesson }}</option>
+
+            {% endfor %}
+          </select>
+        </span>
+      </div>
+
+    </div>
+    
+    
+
+    <div class="file has-name is-boxed" id="fileUpload" >
+      <label class="file-label  ">
+        <input class="file-input " type="file" name="file-to-check">
+        <span class="file-cta ">
+          <span class="file-icon ">
+            <img src="{% static 'UI/img/upload.png' %}" alt="upload">
+          </span>
+          <span class="file-label ">
+            Выберите файл
+          </span>
+        </span>
+        <span class="file-name has-text-centered ">
+          Файл не выбран...
+        </span>
+      </label>
+    </div>
+   
+
+    
+   
+      <div class="control pt-3">
+        <button class="button is-dark px-5">Проверить переводы</button>
+      </div>
+      
+  </form>
+</div>
+<div class="column box" >
+    {% autoescape off %}
+    {% for verdict in data.verdicts %}
+        <p>{{ verdict }}</p><br>
+    {% endfor %}
+    {% endautoescape %}
+</div>
+</div>
+
+    <script src="{% static 'UI/js/fileUpload.js' %}"></script>
+{% endblock %}
