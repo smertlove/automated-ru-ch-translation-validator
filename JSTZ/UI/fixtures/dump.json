@@ -1,0 +1,1051 @@
+[
+    {
+      "model": "UI.lesson",
+      "pk": 1,
+      "fields": {
+        "number": 8,
+        "name": "Выпейте чаю"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 2,
+      "fields": {
+        "number": 9,
+        "name": "Как Ваша фамилия?"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 3,
+      "fields": {
+        "number": 10,
+        "name": "В какой комнате ты живешь?"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 4,
+      "fields": {
+        "number": 11,
+        "name": "Большое спасибо"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 5,
+      "fields": {
+        "number": 12,
+        "name": "Они хорошие друзья"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 6,
+      "fields": {
+        "number": 13,
+        "name": "Давайте познакомимся"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 7,
+      "fields": {
+        "number": 14,
+        "name": "Вы работаете или учитесь?"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 8,
+      "fields": {
+        "number": 15,
+        "name": "Я учусь в институте"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 9,
+      "fields": {
+        "number": 16,
+        "name": "Что мне надеть?"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 10,
+      "fields": {
+        "number": 17,
+        "name": "В котором часу?"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 11,
+      "fields": {
+        "number": 18,
+        "name": "Распорядок дня. Повторение."
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 12,
+      "fields": {
+        "number": 19,
+        "name": "О предпочтениях"
+      }
+    },
+    {
+      "model": "UI.lesson",
+      "pk": 13,
+      "fields": {
+        "number": 20,
+        "name": "Я приглашаю."
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 1,
+      "fields": {
+        "lesson": 2,
+        "number": 1,
+        "regexp": "请问，您(贵姓|姓什么)？"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 2,
+      "fields": {
+        "lesson": 2,
+        "number": 2,
+        "regexp": "您叫什么？我叫王<p大夫>."
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 3,
+      "fields": {
+        "lesson": 2,
+        "number": 3,
+        "regexp": "请问，您是<p丁先生>吗？是。欢迎(，欢迎)?您?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 4,
+      "fields": {
+        "lesson": 2,
+        "number": 4,
+        "regexp": "他(贵姓|姓什么)？ 他姓<p金>。他是俄语老师。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 5,
+      "fields": {
+        "lesson": 2,
+        "number": 5,
+        "regexp": "你的?朋友是哪国人？我的?朋友是<p英国>人。他是（留学生|外国人）。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 6,
+      "fields": {
+        "lesson": 2,
+        "number": 6,
+        "regexp": "你学习?什么？我学习?<s汉语>。你呢？我学习?<p朝鲜>语. "
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 7,
+      "fields": {
+        "lesson": 2,
+        "number": 7,
+        "regexp": "我是外语学院的学生。我学习?<p法>语。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 8,
+      "fields": {
+        "lesson": 2,
+        "number": 8,
+        "regexp": "我们学院的老师不都是<p俄罗斯>人。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 9,
+      "fields": {
+        "lesson": 2,
+        "number": 9,
+        "regexp": "外语老师都是外国人。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 10,
+      "fields": {
+        "lesson": 2,
+        "number": 10,
+        "regexp": "我弟弟也学习?汉语。他很忙。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 11,
+      "fields": {
+        "lesson": 2,
+        "number": 11,
+        "regexp": "请问，这是谁的书？这是王学生的书。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 12,
+      "fields": {
+        "lesson": 2,
+        "number": 12,
+        "regexp": "请问，这是什么？这是<p俄>语书。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 13,
+      "fields": {
+        "lesson": 2,
+        "number": 13,
+        "regexp": "您的大夫老吗？他不老。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 14,
+      "fields": {
+        "lesson": 2,
+        "number": 14,
+        "regexp": "这是谁的车？这是我的车。你的车很好。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 15,
+      "fields": {
+        "lesson": 2,
+        "number": 15,
+        "regexp": "你爸爸、妈妈都好吗？他们都很好。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 16,
+      "fields": {
+        "lesson": 3,
+        "number": 1,
+        "regexp": "请问，王大夫在（吗|不在）？是，请进，请坐。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 17,
+      "fields": {
+        "lesson": 3,
+        "number": 2,
+        "regexp": "谢<p先生>在这儿（吗|不在这儿）？不。他在哪儿？他?在学院。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 18,
+      "fields": {
+        "lesson": 3,
+        "number": 3,
+        "regexp": "<p丁>老师在哪儿？他在宿舍。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 19,
+      "fields": {
+        "lesson": 3,
+        "number": 4,
+        "regexp": "妈妈在哪儿？妈妈在学院。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 20,
+      "fields": {
+        "lesson": 3,
+        "number": 5,
+        "regexp": "你的地图在哪儿？((我的)?地图)?在这儿。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 21,
+      "fields": {
+        "lesson": 3,
+        "number": 6,
+        "regexp": "你在哪儿住？我在宿舍住。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 22,
+      "fields": {
+        "lesson": 3,
+        "number": 7,
+        "regexp": "你（在多少号住|住多少号）？我（住二层二四一号|在二层二四一号住）。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 23,
+      "fields": {
+        "lesson": 3,
+        "number": 8,
+        "regexp": "请问，外语学院在哪儿？（外语学院）?在那儿。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 24,
+      "fields": {
+        "lesson": 3,
+        "number": 9,
+        "regexp": "你是（学生吗|不是学生）？是的?，我是外语学院的学生。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 25,
+      "fields": {
+        "lesson": 3,
+        "number": 10,
+        "regexp": "你学习?什么？我学习?（汉语|中文）。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 26,
+      "fields": {
+        "lesson": 3,
+        "number": 11,
+        "regexp": "<p金><p太太>在<p医院>吗？他?不在，他在宿舍。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 27,
+      "fields": {
+        "lesson": 3,
+        "number": 12,
+        "regexp": "<p厕所>在哪儿？<p厕所>在三层。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 28,
+      "fields": {
+        "lesson": 3,
+        "number": 13,
+        "regexp": "你喝(<p咖啡>吗|不和<p咖啡>)？不喝?， 我喝茶。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 29,
+      "fields": {
+        "lesson": 3,
+        "number": 14,
+        "regexp": "这是(<p黄河>吗|不是<p黄河>)？不是?，这是<p长江>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 30,
+      "fields": {
+        "lesson": 3,
+        "number": 15,
+        "regexp": "<p黄河>在哪儿？你看， （<p黄河>）?在这儿。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 31,
+      "fields": {
+        "lesson": 1,
+        "number": 1,
+        "regexp": "<s你>好，王老师。<s你>好。欢迎，请进。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 32,
+      "fields": {
+        "lesson": 1,
+        "number": 2,
+        "regexp": "<s你>好吗？我很?好。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 33,
+      "fields": {
+        "lesson": 1,
+        "number": 3,
+        "regexp": "请进。<s你>喝茶吗？"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 34,
+      "fields": {
+        "lesson": 1,
+        "number": 4,
+        "regexp": "这是中国茶。中国茶很?好喝?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 35,
+      "fields": {
+        "lesson": 1,
+        "number": 5,
+        "regexp": "请喝<p啤酒>。<s你>喝什么<p啤酒>？我喝<p德国><p啤酒>。<p德国><p啤酒>很?好喝?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 36,
+      "fields": {
+        "lesson": 1,
+        "number": 6,
+        "regexp": "请吸烟。我不吸烟。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 37,
+      "fields": {
+        "lesson": 1,
+        "number": 7,
+        "regexp": "<s你>喝<p咖啡>吗？谢谢。不客气。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 38,
+      "fields": {
+        "lesson": 1,
+        "number": 8,
+        "regexp": "<s你>喝什么？我喝茶。谢谢。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 39,
+      "fields": {
+        "lesson": 1,
+        "number": 9,
+        "regexp": "中国人喝茶，<p俄罗斯>人也喝茶。<p俄罗斯>人也喝<p咖啡>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 40,
+      "fields": {
+        "lesson": 1,
+        "number": 10,
+        "regexp": "他是中国人。中国人不喝<p牛奶>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 41,
+      "fields": {
+        "lesson": 1,
+        "number": 11,
+        "regexp": "欢迎<s你>。<s你>是谁？<s你>是哪国人？"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 42,
+      "fields": {
+        "lesson": 1,
+        "number": 12,
+        "regexp": "王<p太太>，请进。请不客气。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 43,
+      "fields": {
+        "lesson": 1,
+        "number": 13,
+        "regexp": "这是马<p先生>的书。他是汉语老师。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 44,
+      "fields": {
+        "lesson": 1,
+        "number": 14,
+        "regexp": "大夫都很?忙。我很?不忙。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 45,
+      "fields": {
+        "lesson": 1,
+        "number": 15,
+        "regexp": "这是谁的地图？这是我朋友的地图。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 46,
+      "fields": {
+        "lesson": 4,
+        "number": 1,
+        "regexp": "这是什么？这是词典。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 47,
+      "fields": {
+        "lesson": 4,
+        "number": 2,
+        "regexp": "这是(哪|什么)词典？这是<s汉语>词典。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 48,
+      "fields": {
+        "lesson": 4,
+        "number": 3,
+        "regexp": "这是谁的词典？这是中国留学生的词典。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 49,
+      "fields": {
+        "lesson": 4,
+        "number": 4,
+        "regexp": "我的画报在哪儿？（你的画报）?在这儿。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 50,
+      "fields": {
+        "lesson": 4,
+        "number": 5,
+        "regexp": "这是你的地图吗？(这是我的地图|是的?)。我用吗？请?用(一下)?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 51,
+      "fields": {
+        "lesson": 4,
+        "number": 6,
+        "regexp": "这是报纸吗？是的。这是哪国的报纸？这是中国的报纸。我看。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 52,
+      "fields": {
+        "lesson": 4,
+        "number": 7,
+        "regexp": "<s你>((叫|姓)什么|贵姓)？我姓谢。你是外国人吗？是的?。我是<p英国>人。我学习?<s汉语>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 53,
+      "fields": {
+        "lesson": 4,
+        "number": 8,
+        "regexp": "<<vars $a=外语学院的宿舍，六层六〇七号; >>你（在哪儿住|住哪儿）？我(在$a住|住$a)。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 54,
+      "fields": {
+        "lesson": 4,
+        "number": 9,
+        "regexp": "还你书。谢谢。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 55,
+      "fields": {
+        "lesson": 4,
+        "number": 10,
+        "regexp": "这是我的车。我不用(我的)?车。你用。谢谢。<s不客气>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 56,
+      "fields": {
+        "lesson": 4,
+        "number": 11,
+        "regexp": "你看，这是他爸爸。他是大夫。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 57,
+      "fields": {
+        "lesson": 4,
+        "number": 12,
+        "regexp": "你忙(吗|不忙)？我?不忙。我们都不忙。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 58,
+      "fields": {
+        "lesson": 4,
+        "number": 13,
+        "regexp": "你的<p电话>号是什么？二三六七八九〇一。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 59,
+      "fields": {
+        "lesson": 4,
+        "number": 14,
+        "regexp": "你弟弟学习?什么？他学习?<p俄>语。(现在)?他在<p俄罗斯>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 60,
+      "fields": {
+        "lesson": 4,
+        "number": 15,
+        "regexp": "这是留学生的<p本子>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 61,
+      "fields": {
+        "lesson": 5,
+        "number": 1,
+        "regexp": "<<vars $a=他的朋友; >>你认识($a吗|不认识$a)？我认识(他|$a)?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 62,
+      "fields": {
+        "lesson": 5,
+        "number": 2,
+        "regexp": "请问，他姓什么？他姓王。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 63,
+      "fields": {
+        "lesson": 5,
+        "number": 3,
+        "regexp": "你们认识吗？这是丁先生。他是我的朋友、也是我的老师。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 64,
+      "fields": {
+        "lesson": 5,
+        "number": 4,
+        "regexp": "我的词典在哪儿？在这儿。你现在用(吗|不用)？我?不用、还你(词典)?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 65,
+      "fields": {
+        "lesson": 5,
+        "number": 5,
+        "regexp": "他们也都在这儿学习?吗？不、不都(是|学习)?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 66,
+      "fields": {
+        "lesson": 5,
+        "number": 6,
+        "regexp": "<<vars $a=留学生宿舍、三层三〇五号; >>我的朋友(住在?$a|在$a主)。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 67,
+      "fields": {
+        "lesson": 5,
+        "number": 7,
+        "regexp": "我不认识他哥哥、也不认识他弟弟。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 68,
+      "fields": {
+        "lesson": 5,
+        "number": 8,
+        "regexp": "你去哪儿？我去宿舍看朋友。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 69,
+      "fields": {
+        "lesson": 5,
+        "number": 9,
+        "regexp": "你常常?去那儿吗？是、常常?去。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 70,
+      "fields": {
+        "lesson": 5,
+        "number": 10,
+        "regexp": "中国学生请我们(在|去)宿舍喝茶。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 71,
+      "fields": {
+        "lesson": 5,
+        "number": 11,
+        "regexp": "<<vars $a=中国; >>他现在在$a(吗|不在$a)？不在?、他现在在法国。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 72,
+      "fields": {
+        "lesson": 5,
+        "number": 12,
+        "regexp": "他们都在外语学院学习?英语。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 73,
+      "fields": {
+        "lesson": 5,
+        "number": 13,
+        "regexp": "<<vars $a=王先生; >>你认识($a吗|不认识$a)？他是谁？是的?、我认识他。他是大夫。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 74,
+      "fields": {
+        "lesson": 5,
+        "number": 14,
+        "regexp": "他是我爸爸的朋友。我们常常?看他。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 75,
+      "fields": {
+        "lesson": 5,
+        "number": 15,
+        "regexp": "我不常去那儿。我(很忙|有很多工作|工作很忙)。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 76,
+      "fields": {
+        "lesson": 6,
+        "number": 1,
+        "regexp": "你认识不认识他？ 我?认识他?、他是我爸爸的朋友。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 77,
+      "fields": {
+        "lesson": 6,
+        "number": 2,
+        "regexp": "你常常?去商店吗？不常、我妈妈常常?去。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 78,
+      "fields": {
+        "lesson": 6,
+        "number": 3,
+        "regexp": "他<s姓什么>？他姓丁。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 79,
+      "fields": {
+        "lesson": 6,
+        "number": 4,
+        "regexp": "那是谁？请进。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 80,
+      "fields": {
+        "lesson": 6,
+        "number": 5,
+        "regexp": "王老师在(吗|不在)？他不在。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 81,
+      "fields": {
+        "lesson": 6,
+        "number": 6,
+        "regexp": "你去哪儿？我去邮局买邮票。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 82,
+      "fields": {
+        "lesson": 6,
+        "number": 7,
+        "regexp": "他也吸烟吗？他不吸烟?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 83,
+      "fields": {
+        "lesson": 6,
+        "number": 8,
+        "regexp": "他也去中国学习?吗？<s对了>、他也学习?<s汉语>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 84,
+      "fields": {
+        "lesson": 6,
+        "number": 9,
+        "regexp": "我介绍一下儿。这是我的好朋友。他叫张文。他是教授。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 85,
+      "fields": {
+        "lesson": 6,
+        "number": 10,
+        "regexp": "你用(词典吗|不用词典)？我?用。我的朋友不用。你?问他。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 86,
+      "fields": {
+        "lesson": 6,
+        "number": 11,
+        "regexp": "他们也都来我们的学院学俄语。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 87,
+      "fields": {
+        "lesson": 6,
+        "number": 12,
+        "regexp": "他们也都是法国学生。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 88,
+      "fields": {
+        "lesson": 6,
+        "number": 13,
+        "regexp": "我去商店买笔和纸。你去(不去|吗)？"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 89,
+      "fields": {
+        "lesson": 6,
+        "number": 14,
+        "regexp": "你的朋友说(俄语吗|不说俄语)？不说?、他是英国人。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 90,
+      "fields": {
+        "lesson": 6,
+        "number": 15,
+        "regexp": "他们都去宿舍喝茶。你们也都去吗？"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 91,
+      "fields": {
+        "lesson": 6,
+        "number": 16,
+        "regexp": "你们都学习?<s汉语>吗？<s对了>、我们都学习?(<s汉语>)?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 92,
+      "fields": {
+        "lesson": 6,
+        "number": 17,
+        "regexp": "<<vars $a=多少号; $b=五二一号; >>她(住在?$a|在$a住)？她(在$b住|住在?$b)。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 93,
+      "fields": {
+        "lesson": 6,
+        "number": 18,
+        "regexp": "你的朋友来(吗|不来)？不来?、她去学院还词典。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 94,
+      "fields": {
+        "lesson": 6,
+        "number": 19,
+        "regexp": "这是谁的地图？(我的|这是我的地图)。你用不用？我用(一下儿)?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 95,
+      "fields": {
+        "lesson": 6,
+        "number": 20,
+        "regexp": "这是什么本子？这是<s汉语>本子。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 96,
+      "fields": {
+        "lesson": 6,
+        "number": 21,
+        "regexp": "你现在用笔吗？(不用?|我不用)。(请|你)用（一下儿）?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 97,
+      "fields": {
+        "lesson": 6,
+        "number": 22,
+        "regexp": "我去学院还他的法语本子。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 98,
+      "fields": {
+        "lesson": 6,
+        "number": 23,
+        "regexp": "<s您>好。请进。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 99,
+      "fields": {
+        "lesson": 6,
+        "number": 24,
+        "regexp": "欢迎、欢迎。请坐、请?喝茶。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 100,
+      "fields": {
+        "lesson": 6,
+        "number": 25,
+        "regexp": "他也说汉语吗？不、他说英语。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 101,
+      "fields": {
+        "lesson": 6,
+        "number": 26,
+        "regexp": "你也去学院还书吗？不、我去宿舍看看?朋友们?。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 102,
+      "fields": {
+        "lesson": 6,
+        "number": 27,
+        "regexp": "他们也都是中国人吗？不是?、他们不都是中国人、可是他们都说<s汉语>。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 103,
+      "fields": {
+        "lesson": 6,
+        "number": 28,
+        "regexp": "外语学院的学生不都是俄罗斯人。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 104,
+      "fields": {
+        "lesson": 6,
+        "number": 29,
+        "regexp": "我们都认识他。他是我们的老师、丁教授。"
+      }
+    },
+    {
+      "model": "UI.chineseregexp",
+      "pk": 105,
+      "fields": {
+        "lesson": 6,
+        "number": 30,
+        "regexp": "我们常常?说法语。我们都学法语。"
+      }
+    }
+  ]
