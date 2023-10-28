@@ -1,2 +1,16 @@
 # automated-ru-ch-translation-validator
-course paper spring 2023
+Для запуска приложения требуется установленный Python 3.8 или выше
+
+## Установка виртуального окружения и зависимостей:
+* `...\> python -m venv env`
+* `...\> env\Scripts\activate`
+* `(env) ...\> pip install -r requirements.txt`
+
+## Не забываем провести миграции при первом запуске:
+* `(env) ...\> cd JSTZ`
+* `(env) ...\JSTZ> python manage.py makemigrations`
+* `(env) ...\JSTZ> python manage.py migrate`
+
+## Запуск:
+* `(env) ...\> cd JSTZ`
+* `(env) ...\JSTZ> python manage.py runserver`
