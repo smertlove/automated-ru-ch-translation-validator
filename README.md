@@ -10,6 +10,7 @@
 * `(env) ...\> cd JSTZ`
 * `(env) ...\JSTZ> python manage.py makemigrations`
 * `(env) ...\JSTZ> python manage.py migrate`
+* `(env) ...\JSTZ> python manage.py loaddata dump.json`
 
 ## Запуск:
 * `(env) ...\> cd JSTZ`
