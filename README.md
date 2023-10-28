@@ -7,11 +7,17 @@
 * `(env) ...\> pip install -r requirements.txt`
 
 ## Не забываем провести миграции при первом запуске:
+Переходим в папку с проектом:
 * `(env) ...\> cd JSTZ`
+Проводим миграции:
 * `(env) ...\JSTZ> python manage.py makemigrations`
 * `(env) ...\JSTZ> python manage.py migrate`
+Загружаем стартовые данные в базу данных:
 * `(env) ...\JSTZ> python manage.py loaddata dump.json`
 
 ## Запуск:
+Переходим в папку с проектом:
 * `(env) ...\> cd JSTZ`
+Запускаем сервер:
 * `(env) ...\JSTZ> python manage.py runserver`
+* Приложение запускается по адресу `http://127.0.0.1:8000/` (можно открыть в браузере)
