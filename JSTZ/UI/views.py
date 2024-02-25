@@ -1,38 +1,60 @@
 from django.shortcuts import render
-from .src import Comporator
-from .src import EnhancedRegexps as ER
-from .src.UserRules import RULES
-from .models import Lesson, ChineseRegexp
-from .src.parse_file import parse_file
-from .src.TranslationChecker import TranslationChecker
+from .services import Comporator
+from .services import EnhancedRegexps as ER
+from .services.UserRules import RULES
+# from .models import Lesson, ChineseRegexp
+from .services.parse_file import StudentTranslationParser
+from .services.TranslationChecker import TranslationChecker
 from pprint import pprint
+import pathlib
+
+
+class RegexpsDatabase:
+    
+    regexp_dir_path = pathlib.Path(__file__).parent.resolve() / "regexps"
+    lesson_paths = {c.name: c for c in regexp_dir_path.iterdir()}
+    
+    
+    @classmethod
+    def read(cls, lesson_name) -> str:
+        with open(cls.lesson_paths[lesson_name], "r", encoding="utf-8") as file:
+            return file.read()
+        
 
 
 def index(request):
-    lessons = Lesson.objects.all()
-    return render(request, 'UI/index.html', {"data": {"lessons":lessons, "verdicts":["Тут будут результаты проверки."]}})
+    lessons = RegexpsDatabase.lesson_paths
+    lesson_names = [l for l in lessons]
+    return render(request, 'UI/index.html', { "data": { "lessons": lesson_names , "verdicts":["Тут будут результаты проверки."]}})
 
 
 
 def get_file(request):
-    lessons = Lesson.objects.all()
+    lessons = RegexpsDatabase.lesson_paths
+    lesson_names = [l for l in lessons]
+    
+    
+    lesson = request.POST["lesson"]
     data = request.FILES["file-to-check"].read().decode("utf-8")
-    data = parse_file(data.strip())
-
-    lesson = int(request.POST["lesson"].split(")")[0])
-    regexps = ChineseRegexp.objects.filter(lesson=lesson-7)
-
+    data = StudentTranslationParser.parse(data)
+    
+    true_regexps = StudentTranslationParser.parse(RegexpsDatabase.read(lesson))
     verdicts = []
 
     template = "{}) {}"
 
     for number in data:
-        regexp = regexps.get(number=number).regexp
-        verdicts.append(template.format(number, TranslationChecker.check_translation(data[number], regexp)))
+        verdicts.append(
+            template.format(number,
+                            TranslationChecker.check_translation(
+                                data[number],
+                                true_regexps[number])
+                            )
+            )
     pprint(verdicts)
 
 
-    return render(request, "UI/index.html", {"data": {"lessons":lessons, "verdicts":verdicts}})
+    return render(request, "UI/index.html", {"data": {"lessons":lesson_names, "verdicts":verdicts}})
 
 
 
