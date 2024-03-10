@@ -36,22 +36,26 @@ def get_file(request):
     
     lesson = request.POST["lesson"]
     data = request.FILES["file-to-check"].read().decode("utf-8")
+
     data = StudentTranslationParser.parse(data)
+
     
     true_regexps = StudentTranslationParser.parse(RegexpsDatabase.read(lesson))
+
     verdicts = []
 
     template = "{}) {}"
 
     for number in data:
-        verdicts.append(
-            template.format(number,
-                            TranslationChecker.check_translation(
-                                data[number],
-                                true_regexps[number])
-                            )
-            )
-    pprint(verdicts)
+        for variant in data[number]:
+            verdicts.append(
+                template.format(number,
+                                TranslationChecker.check_translation(
+                                    variant.strip(),
+                                    true_regexps[number][0])
+                                )
+                )
+    # pprint(verdicts)
 
 
     return render(request, "UI/index.html", {"data": {"lessons":lesson_names, "verdicts":verdicts}})

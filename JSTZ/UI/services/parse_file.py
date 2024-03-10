@@ -14,7 +14,11 @@ class StudentTranslationParser:
         data = map(lambda c: cls.numeration_pattern.split(c, maxsplit=1), data)
         data = map(lambda c: (int(c[0]), c[1]), data)
         
-        return dict(data)
+        result = dict()
+        for i, sent in data:
+            result[i] = result.get(i, []) + [sent]
+        
+        return result
     
 
 

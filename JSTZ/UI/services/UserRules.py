@@ -8,7 +8,7 @@ def mk_regexp_piece(elems: list):
 
 def _get_synonyms(word: str):
     synonym_groups = [
-    {"你",  "您", "你们"},
+    {"你",  "您"},
     {"对了", "是的", "对", "是"},
     {"汉语",  "中文"},
     {"不客气",  "不谢"},

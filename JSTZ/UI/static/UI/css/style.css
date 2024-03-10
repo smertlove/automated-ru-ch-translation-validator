@@ -22,7 +22,9 @@
 }
 
 .missing-char {
-    color: green;
+    /* color: green; */
+    color: red;
+    font-weight: 900;
 }
 
 .extra-char {
