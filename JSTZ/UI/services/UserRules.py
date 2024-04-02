@@ -2,18 +2,19 @@
 
 
 import pypinyin
+import pathlib
+from utils.load_rows import load_rows
+
+
+
 
 def mk_regexp_piece(elems: list):
     return f"({'|'.join(elems)})"
 
+SYNONYMS_PATH = pathlib.Path(__file__).parent / r"data/synonyms.txt"
+
 def _get_synonyms(word: str):
-    synonym_groups = [
-    {"你",  "您"},
-    {"对了", "是的", "对", "是"},
-    {"汉语",  "中文"},
-    {"不客气",  "不谢"},
-    {"姓什么",  "贵姓"}
-    ]
+    synonym_groups = load_rows(SYNONYMS_PATH)
     for group in synonym_groups:
         if word in group:
             return [c for c in group]
@@ -21,6 +22,9 @@ def _get_synonyms(word: str):
 
 def get_synonyms(word: str):
     return mk_regexp_piece(_get_synonyms(word))
+
+
+
 
 def _get_pinyin(word: str):
     pinyin=[]
@@ -33,6 +37,10 @@ def get_pinyin(word: str):
 
 
 RULES = {"s": get_synonyms, "p": get_pinyin}
+
+
+
+
 
 def zhengzaine(string: str) -> str:
     a1 = f"正在{string}呢"
