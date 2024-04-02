@@ -3,7 +3,7 @@
 
 import pypinyin
 import pathlib
-from utils.load_rows import load_rows
+from .utils.load_rows import load_rows
 
 
 

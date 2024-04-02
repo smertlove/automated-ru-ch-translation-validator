@@ -3,7 +3,7 @@ import re
 class StudentTranslationParser:
     
     newline_pattern    = re.compile(r"\n+")
-    numeration_pattern = re.compile(r"[\)\.]")
+    numeration_pattern = re.compile(r"[\)\.．]")
     
     @classmethod
     def parse(cls, text) -> dict:
@@ -11,7 +11,10 @@ class StudentTranslationParser:
         
         data = cls.newline_pattern.split(text)
         data = map(str.strip, data[1:])
+        data = [c for c in data if c.strip()]
+        
         data = map(lambda c: cls.numeration_pattern.split(c, maxsplit=1), data)
+        
         data = map(lambda c: (int(c[0]), c[1]), data)
         
         result = dict()
