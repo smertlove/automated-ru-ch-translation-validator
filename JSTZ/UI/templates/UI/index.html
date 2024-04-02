@@ -11,7 +11,7 @@
 
       <div class="control">
         <span class="select is-dark" style="max-width: 210px;">
-          <select name="lesson">
+          <select name="lesson" id="lesson">
             <option>Урок</option>
             {% for lesson in data.lessons %}
             <option>{{ lesson }}</option>
@@ -48,10 +48,17 @@
       <div class="control pt-3">
         <button class="button is-dark px-5">Проверить переводы</button>
       </div>
-      
+
+
   </form>
+
+  
+  <div class="control pt-3">
+    <button class="button is-dark px-5" id="dd">Сохранить результаты</button>
+  </div>
 </div>
-<div class="column box" >
+<div class="column box" id="results">
+    
     {% autoescape off %}
     {% for verdict in data.verdicts %}
         <p>{{ verdict }}</p><br>
@@ -61,4 +68,5 @@
 </div>
 
     <script src="{% static 'UI/js/fileUpload.js' %}"></script>
+    <script src="{% static 'UI/js/download.js' %}"></script>
 {% endblock %}
