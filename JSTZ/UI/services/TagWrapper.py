@@ -8,6 +8,7 @@ class TagWrapper:
 
     @classmethod
     def mk_html_tags(cls, string):
+        print(string)
         result = []
         ptr = 0
         while ptr < len(string):
